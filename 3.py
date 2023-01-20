@@ -1,8 +1,10 @@
-from collections import Counter
-def count(lst):
-    yield Counter(lst)
+def count(list):
+    j=0
+    for i in list:
+        j+=1
+    yield j
 
-lst=[1,2,3,1,2,3,5,6]
-for i in count(lst):
+
+list=[1,2,3,4,7]
+for i in count(list):
     print(i)
-
