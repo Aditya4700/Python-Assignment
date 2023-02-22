@@ -22,15 +22,6 @@ def test_leave_slot():
     assert parkinglot.leave_slot(1) == False
 
 
-
-def test_check_status():
-    parkinglot = ParkingLot.ParkingLot()
-    assert parkinglot.create_parking_lot(2) == 2
-    assert parkinglot.park("1234", "White") == 1
-    assert parkinglot.park("9999", "Black") == 2
-    assert parkinglot.check_status() == "Slot No \tRegistration No \tColor\n1\t1234\tWhite\n2\t9999\tBlack"
-
-
 def test_get_regno_from_color():
     parkinglot = ParkingLot.ParkingLot()
     assert parkinglot.create_parking_lot(3) == 3

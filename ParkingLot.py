@@ -47,10 +47,7 @@ class ParkingLot:
             else:
                 continue
             
-    
-    
-    
-
+  
     def get_regno_from_color(self, color):
         regnos = []
         for i in self.slots:
