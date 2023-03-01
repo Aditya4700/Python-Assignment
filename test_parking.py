@@ -1,10 +1,16 @@
 import ParkingLot
 import Vehicle
 
+
+def test_create_parking_lot_negative():
+    parkinglot = ParkingLot.ParkingLot()
+    assert parkinglot.create_parking_lot(-1) == -1
+
 def test_create_parking_lot():
     parkinglot = ParkingLot.ParkingLot()
     assert parkinglot.create_parking_lot(5) == 5
     assert parkinglot.create_parking_lot(0) == 0
+    assert parkinglot.create_parking_lot(-1) == -1
 
 def test_park():
     parkinglot = ParkingLot.ParkingLot()
